@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Avaliação 360 GTI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-5xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Avaliação 360° GTI</h1>
+    <section class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+      <h2 class="text-xl font-semibold mb-2">Objetivo da Pesquisa</h2>
+      <p class="text-gray-700">
+        O objetivo da pesquisa de avaliação 360 é coletar feedback anônimo e abrangente sobre o desempenho e a postura
+        dos membros da equipe, incluindo o gerente, o chefe de núcleo e os colegas de trabalho.
+      </p>
+      <p class="text-gray-700 mt-2">
+        É fundamental destacar que a pesquisa de avaliação 360 será conduzida de forma totalmente anônima. Isso
+        significa que suas respostas não serão atribuídas a você, garantindo total confidencialidade.
+      </p>
+      <p class="text-gray-700 mt-2">
+        Queremos que você se sinta à vontade para expressar suas opiniões e sentimentos de maneira honesta e aberta. A
+        autenticidade das suas respostas é importante para que possamos entender verdadeiramente a dinâmica da equipe e
+        identificar áreas que precisam de atenção ou melhoria.
+      </p>
+      <p class="text-gray-700 mt-2">
+        Não há necessidade de "maquiar" suas opiniões ou de se preocupar em como suas respostas serão interpretadas. O
+        objetivo é coletar feedback sincero que nos ajude a construir um ambiente de trabalho mais colaborativo e
+        eficaz. Sua contribuição é valiosa e pode fazer uma grande diferença para o desenvolvimento da equipe e da
+        organização como um todo.
+      </p>
+      <p class="text-gray-700 mt-2">
+        É essencial evitar o uso de palavras ofensivas ou críticas pessoais. Ao expressar suas opiniões, considere como
+        suas palavras podem impactar a dinâmica do grupo e a convivência entre os membros. O respeito mútuo é a base
+        para construirmos relações saudáveis e produtivas. Agradecemos sua compreensão e colaboração!
+      </p>
+    </section>
+
+    <form id="form360" class="space-y-10">
+
+      <!-- IDENTIFICAÇÃO DO RESPONDENTE -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Quem está respondendo?</h2>
+        <select id="respondente" name="respondente" class="w-full border p-2 rounded" required>
+          <option value="">Selecione...</option>
+          <option value="Keila">Keila</option>
+          <option value="Ariel">Ariel</option>
+          <option value="Dante">Dante</option>
+          <option value="Alex">Alex</option>
+          <option value="Sayonara">Sayonara</option>
+          <option value="Rafael">Rafael</option>
+          <option value="Marcus">Marcus</option>
+          <option value="Jaqueline">Jaqueline</option>
+          <option value="Glaucio">Glaucio</option>
+          <option value="Lucélio">Lucélio</option>
+          <option value="Eduardo">Eduardo</option>
+        </select>
+      </section>
+
+      <!-- GERENTE -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Gerente – Márcio Merçon</h2>
+        <label>Descrição (opcional)</label>
+        <textarea name="gerente_descricao" rows="3" class="w-full border rounded-lg p-2 mb-6"></textarea>
+        <div class="space-y-6">
+          <label>O gerente comunica claramente as expectativas?</label>
+          <select name="gerente_expectativas" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+          <label>Oferece feedback justo? *</label>
+          <select name="gerente_feedback_pratica" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+          <label>Feedback adicional *</label>
+          <textarea name="gerente_feedback_adicional" class="w-full border p-2 rounded" required></textarea>
+        </div>
+      </section>
+
+      <!-- CHEFE DE NÚCLEO - MAYCON -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Chefe de Núcleo – Maycon</h2>
+        <label>Visão clara das estratégias?</label>
+        <select name="nucleo_maycon_visao" class="w-full border p-2 rounded" required>
+          <option>Muito Insatisfatório</option>
+          <option>Insatisfatório</option>
+          <option>Regular</option>
+          <option>Satisfatório</option>
+          <option>Muito Satisfatório</option>
+        </select>
+        <label>Feedback adicional</label>
+        <textarea name="nucleo_maycon_feedback" class="w-full border p-2 rounded"></textarea>
+      </section>
+
+      <!-- CHEFE DE NÚCLEO - LUCIANE -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Chefe de Núcleo – Luciane</h2>
+        <label>Visão clara das estratégias?</label>
+        <select name="nucleo_luciane_visao" class="w-full border p-2 rounded" required>
+          <option>Muito Insatisfatório</option>
+          <option>Insatisfatório</option>
+          <option>Regular</option>
+          <option>Satisfatório</option>
+          <option>Muito Satisfatório</option>
+        </select>
+        <label>Feedback adicional</label>
+        <textarea name="nucleo_luciane_feedback" class="w-full border p-2 rounded"></textarea>
+      </section>
+
+
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Autoavaliação</h2>
+
+        <label class="block mb-2">Descrição (opcional)</label>
+        <textarea name="auto_descricao" rows="3" class="w-full border rounded-lg p-2 mb-6"></textarea>
+
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-semibold">1 - Como você se sente em relação à sua contribuição na equipe?</h3>
+            <select name="auto_contribuicao" class="w-full border p-2 rounded" required>
+              <option>Muito insatisfeito</option>
+              <option>Insatisfeito</option>
+              <option>Neutro</option>
+              <option>Satisfeito</option>
+              <option>Muito satisfeito</option>
+            </select>
+          </div>
+
+          <div>
+            <h3 class="font-semibold">2 - Quão bem você acredita que colabora com os outros?</h3>
+            <select name="auto_colaboracao" class="w-full border p-2 rounded" required>
+              <option>Muito mal</option>
+              <option>Mal</option>
+              <option>Regular</option>
+              <option>Bem</option>
+              <option>Muito bem</option>
+            </select>
+          </div>
+
+          <div>
+            <h3 class="font-semibold">3 - Como você avalia a confiança que os outros têm em você dentro da equipe?</h3>
+            <select name="auto_confianca" class="w-full border p-2 rounded" required>
+              <option>Nenhuma confiança</option>
+              <option>Pouca confiança</option>
+              <option>Confiança moderada</option>
+              <option>Alta confiança</option>
+              <option>Total confiança</option>
+            </select>
+          </div>
+
+          <div>
+            <h3 class="font-semibold">4 - Qual é o seu nível de comprometimento com os objetivos da equipe?</h3>
+            <select name="auto_comprometimento" class="w-full border p-2 rounded" required>
+              <option>Muito baixo</option>
+              <option>Baixo</option>
+              <option>Moderado</option>
+              <option>Alto</option>
+              <option>Muito alto</option>
+            </select>
+          </div>
+
+          <div>
+            <h3 class="font-semibold">Feedback Adicional *</h3>
+            <textarea name="auto_feedback_adicional" rows="5" required class="w-full border rounded-lg p-3"></textarea>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- COLEGAS -->
+
+      <section id="colega-Keila">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Keila</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Keila em projetos?</label>
+          <select name="colega_keila_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Keila contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_keila_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Keila?</label>
+          <select name="colega_keila_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Keila?</label>
+          <select name="colega_keila_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Keila demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_keila_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Keila em lidar com conflitos?</label>
+          <select name="colega_keila_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Keila?</label>
+          <select name="colega_keila_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Keila é proativo(a)?</label>
+          <select name="colega_keila_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Keila</label>
+          <textarea name="colega_keila_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Ariel">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Ariel</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Ariel em projetos?</label>
+          <select name="colega_ariel_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Ariel contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_ariel_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Ariel?</label>
+          <select name="colega_ariel_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Ariel?</label>
+          <select name="colega_ariel_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Ariel demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_ariel_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Ariel em lidar com conflitos?</label>
+          <select name="colega_ariel_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Ariel?</label>
+          <select name="colega_ariel_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Ariel é proativo(a)?</label>
+          <select name="colega_ariel_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Ariel</label>
+          <textarea name="colega_ariel_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Dante">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Dante</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Dante em projetos?</label>
+          <select name="colega_dante_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Dante contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_dante_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Dante?</label>
+          <select name="colega_dante_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Dante?</label>
+          <select name="colega_dante_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Dante demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_dante_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Dante em lidar com conflitos?</label>
+          <select name="colega_dante_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Dante?</label>
+          <select name="colega_dante_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Dante é proativo(a)?</label>
+          <select name="colega_dante_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Dante</label>
+          <textarea name="colega_dante_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Alex">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Alex</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Alex em projetos?</label>
+          <select name="colega_alex_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Alex contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_alex_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Alex?</label>
+          <select name="colega_alex_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Alex?</label>
+          <select name="colega_alex_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Alex demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_alex_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Alex em lidar com conflitos?</label>
+          <select name="colega_alex_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Alex?</label>
+          <select name="colega_alex_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Alex é proativo(a)?</label>
+          <select name="colega_alex_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Alex</label>
+          <textarea name="colega_alex_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Sayonara">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Sayonara</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Sayonara em projetos?</label>
+          <select name="colega_sayonara_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Sayonara contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_sayonara_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Sayonara?</label>
+          <select name="colega_sayonara_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Sayonara?</label>
+          <select name="colega_sayonara_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Sayonara demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_sayonara_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Sayonara em lidar com conflitos?</label>
+          <select name="colega_sayonara_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Sayonara?</label>
+          <select name="colega_sayonara_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Sayonara é proativo(a)?</label>
+          <select name="colega_sayonara_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Sayonara</label>
+          <textarea name="colega_sayonara_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Rafael">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Rafael</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Rafael em projetos?</label>
+          <select name="colega_rafael_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Rafael contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_rafael_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Rafael?</label>
+          <select name="colega_rafael_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Rafael?</label>
+          <select name="colega_rafael_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Rafael demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_rafael_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Rafael em lidar com conflitos?</label>
+          <select name="colega_rafael_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Rafael?</label>
+          <select name="colega_rafael_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Rafael é proativo(a)?</label>
+          <select name="colega_rafael_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Rafael</label>
+          <textarea name="colega_rafael_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Marcus">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Marcus</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Marcus em projetos?</label>
+          <select name="colega_marcus_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Marcus contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_marcus_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Marcus?</label>
+          <select name="colega_marcus_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Marcus?</label>
+          <select name="colega_marcus_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Marcus demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_marcus_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Marcus em lidar com conflitos?</label>
+          <select name="colega_marcus_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Marcus?</label>
+          <select name="colega_marcus_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Marcus é proativo(a)?</label>
+          <select name="colega_marcus_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Marcus</label>
+          <textarea name="colega_marcus_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Jaqueline">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Jaqueline</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Jaqueline em projetos?</label>
+          <select name="colega_jaqueline_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Jaqueline contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_jaqueline_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Jaqueline?</label>
+          <select name="colega_jaqueline_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Jaqueline?</label>
+          <select name="colega_jaqueline_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Jaqueline demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_jaqueline_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Jaqueline em lidar com conflitos?</label>
+          <select name="colega_jaqueline_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Jaqueline?</label>
+          <select name="colega_jaqueline_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Jaqueline é proativo(a)?</label>
+          <select name="colega_jaqueline_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Jaqueline</label>
+          <textarea name="colega_jaqueline_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Glaucio">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Glaucio</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Glaucio em projetos?</label>
+          <select name="colega_glaucio_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Glaucio contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_glaucio_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Glaucio?</label>
+          <select name="colega_glaucio_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Glaucio?</label>
+          <select name="colega_glaucio_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Glaucio demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_glaucio_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Glaucio em lidar com conflitos?</label>
+          <select name="colega_glaucio_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Glaucio?</label>
+          <select name="colega_glaucio_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Glaucio é proativo(a)?</label>
+          <select name="colega_glaucio_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Glaucio</label>
+          <textarea name="colega_glaucio_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Lucélio">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Lucélio</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Lucélio em projetos?</label>
+          <select name="colega_lucelio_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Lucélio contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_lucelio_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Lucélio?</label>
+          <select name="colega_lucelio_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Lucélio?</label>
+          <select name="colega_lucelio_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Lucélio demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_lucelio_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Lucélio em lidar com conflitos?</label>
+          <select name="colega_lucelio_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Lucélio?</label>
+          <select name="colega_lucelio_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Lucélio é proativo(a)?</label>
+          <select name="colega_lucelio_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Lucélio</label>
+          <textarea name="colega_lucelio_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+
+      <section id="colega-Eduardo">
+        <h2 class="text-2xl font-semibold mb-4">Avaliação do Colega – Eduardo</h2>
+        <div class="space-y-4">
+          <label>Como você avalia a colaboração de Eduardo em projetos?</label>
+          <select name="colega_eduardo_colaboracao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Eduardo contribui de maneira positiva para o trabalho em equipe?</label>
+          <select name="colega_eduardo_contribuicao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Como você avalia a comunicação de Eduardo?</label>
+          <select name="colega_eduardo_comunicacao" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente à vontade para compartilhar ideias com Eduardo?</label>
+          <select name="colega_eduardo_ideias" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Eduardo demonstra apoio e empatia em suas interações?</label>
+          <select name="colega_eduardo_empatia" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Como você avalia a habilidade de Eduardo em lidar com conflitos?</label>
+          <select name="colega_eduardo_conflitos" class="w-full border p-2 rounded" required>
+            <option>Muito Insatisfatório</option>
+            <option>Insatisfatório</option>
+            <option>Regular</option>
+            <option>Satisfatório</option>
+            <option>Muito Satisfatório</option>
+          </select>
+
+          <label>Você se sente confortável trazendo problemas para Eduardo?</label>
+          <select name="colega_eduardo_conforto" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Eduardo é proativo(a)?</label>
+          <select name="colega_eduardo_proatividade" class="w-full border p-2 rounded" required>
+            <option>Nunca</option>
+            <option>Raramente</option>
+            <option>Às vezes</option>
+            <option>Frequentemente</option>
+            <option>Sempre</option>
+          </select>
+
+          <label>Feedback adicional sobre Eduardo</label>
+          <textarea name="colega_eduardo_feedback" class="w-full border p-2 rounded"></textarea>
+        </div>
+      </section>
+
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded font-bold">Enviar
+        Avaliação</button>
+    </form>
+  </div>
+
+  <script>
+    const select = document.getElementById("respondente");
+    select.addEventListener("change", () => {
+      const nome = select.value;
+      document.querySelectorAll("section[id^='colega-']").forEach(sec => { sec.style.display = "block"; });
+      if (nome) {
+        const secao = document.getElementById("colega-" + nome);
+        if (secao) secao.style.display = "none";
+      }
+    });
+
+
+    const form = document.getElementById("form360");
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach((value, key) => { data[key] = value; });
+
+        try {
+          const response = await fetch("https://script.google.com/macros/s/AKfycbzNyauHTmt6ahFFRkF5Xo1eYjucvCnWzhmC_bnh8TS1c4JXbJH3zM7vStLcrYaJEUatFA/exec", {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" }
+          });
+          if (response.ok) {
+            alert("Avaliação enviada com sucesso!");
+            form.reset();
+          } else {
+            alert("Erro ao enviar. Tente novamente.");
+          }
+        } catch (err) {
+          alert("Falha de conexão. Tente mais tarde.");
+        }
+      });
+  </script>
+</body>
+
+</html>
